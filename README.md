@@ -30,7 +30,7 @@ $ ./gradlew test
 
 ## 2. Content
 
-영속성 컨텍스트나 프록시 과정이 생략되기 때문에 Jdbc 템플릿을 사용했을 때가 Jpa를 사용할 때보다 성능이 좋고, Sequence만 저장했을 때가 엔티티의 많은 필드를 영속화할 때보다 성능이 좋다.
+Jdbc 템플릿을 사용하면 **`영속성 컨텍스트`** 나 **`프록시 설정/호출`** 과정이 생략되기 때문에 Jpa를 사용할 때보다 INSERT 성능이 좋고, **`Sequence만 저장`** 했을 때가 엔티티의 많은 필드를 영속화할 때보다 성능이 좋을 수 있다.
 
 ![image](./src/main/resources/images/images.png)
 
