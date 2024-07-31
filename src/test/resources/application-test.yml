@@ -1,0 +1,30 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO}
+    properties:
+      hibernate:
+        generate_statistics: ${GENERATE_STATISTICS}
+        dialect: ${DIALECT}
+        default_batch_fetch_size: ${BATCH_FETCH_SIZE}
+        show_sql: ${SHOW_SQL}
+        format_sql: ${FORMAT_SQL}
+        jdbc.batch_size: ${BATCH_SIZE}
+        jdbc.fetch_size: ${FETCH_SIZE}
+        order_inserts: ${ORDER_INSERTS}
+        order_updates: ${ORDER_UPDATES}
+    open-in-view: ${OPEN_IN_VIEW}
+    show-sql: ${SHOW_SQL}
+
+  datasource:
+    driver-class-name: ${DRIVER_CLASS_NAME}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: ${MAX_POOL_SIZE}
+      minimum-idle: ${MIN_IDLE}
+      idle-timeout: ${IDLE_TIMEOUT}
+      max-lifetime: ${MAX_LIFETIME}
+      connection-timeout: ${CONNECTION_TIMEOUT}
+      pool-name: ${POOL_NAME}
